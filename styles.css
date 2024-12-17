@@ -14,8 +14,8 @@ body {
 
 .gift-image {
     margin-left: 30px;
-    width: 500px;
-    height: auto;
+    width: 100%; /* Change to 100% for responsiveness */
+    max-width: 500px; /* Maintain max width */
 }
 
 .modal {
@@ -59,4 +59,23 @@ body {
     font-size: 3em; /* Large font size */
     margin-top: 20px; /* Space above the title */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .christmas-title {
+        font-size: 2em; /* Smaller font size for tablets */
+    }
+    .gift-image {
+        margin-left: 10px; /* Reduce margin on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .christmas-title {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+    .gift-image {
+        margin-left: 0; /* Remove margin on mobile */
+    }
 }
